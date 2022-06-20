@@ -1,0 +1,51 @@
+@use "@material/theme" with (
+  $primary: #fcb8ab,
+  $secondary: #feeae6,
+  $on-primary: #442b2d,
+  $on-secondary: #442b2d,
+);
+
+@use "@material/button/styles";
+
+@import "colors";
+@import "variables";
+@import "layout.scss";
+
+body {
+    color: $colorBlack;
+    background-color: $colorWhite;
+}
+
+.center {
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+h3 {
+    margin-bottom: $pad5;
+}
+
+h3, button {
+    text-align: center;
+    align-items: center;
+}
+
+table {
+    width: 100%;
+    align-items: center;
+    align-self: center;
+}
+
+table, td, tr {
+    padding: $pad10;
+    border: 2px solid $colorPrimary;
+    border-collapse: collapse;
+}
+
+.mdc-button {
+    width: 100%;
+    margin-top: 10px;
+}
